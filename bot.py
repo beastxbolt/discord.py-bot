@@ -2,8 +2,9 @@ import discord
 import asyncio
 from discord.ext import commands
 
-prefix = "+"
-bot = commands.Bot(command_prefix = prefix)
+prefix = "?"
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix=prefix, intents=intents)
 
 TOKEN = "BOT TOKEN HERE"
 
